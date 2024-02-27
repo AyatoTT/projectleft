@@ -5,11 +5,8 @@ import Typography from "@mui/material/Typography";
 import Checkbox from "@mui/material/Checkbox";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import {TextareaAutosize} from "@mui/material";
 import React from "react";
-import {DatePicker, LocalizationProvider, StaticDatePicker} from "@mui/lab";
 import dayjs from 'dayjs';
-import AdapterDayjs from "@mui/lab/AdapterDayjs";
 
 export default function Home() {
     const [value, setValue] = React.useState(dayjs('2022-04-17'));
@@ -70,6 +67,7 @@ export default function Home() {
                         }}
                     >
                         <Box sx={{
+                            marginX: "auto",
                             display: 'flex',
                             flexDirection: {xs: 'column', md: 'row'},
                             alignItems: {xs: 'center', sm: 'center'},
@@ -93,23 +91,26 @@ export default function Home() {
                             </Box>
                         </Box>
                         <Box sx={{
+                            marginX: "auto",
                             display: 'flex',
                             flexDirection: {xs: 'column', md: 'row'},
                             alignItems: {xs: 'center', sm: 'center'},
                         }}>
                             <Box sx={{
                                 display: 'flex',
-                                flexDirection: 'row',
+                                flexDirection: {xs: 'column', md: 'row'},
                                 alignItems: {xs: 'center', sm: 'center'},
                                 m: 3
                             }}>
                                 <TextField sx={{mb: 3, mr: 3}} id="OpenAI" label="Ссылка на базу знаний"
-                                           variant="standard"/> <Button variant="contained"
+                                           variant="standard"/>
+                                <Button variant="contained"
                                                                         size="small">Синхронизировать</Button>
                             </Box>
 
                         </Box>
                         <Box sx={{
+                            marginX: "auto",
                             display: 'flex',
                             flexDirection: {xs: 'column', md: 'row'},
                             alignItems: {xs: 'center', sm: 'center'},
@@ -138,6 +139,7 @@ export default function Home() {
                                         style={{
                                             padding: '5px 10px',
                                             minHeight: '100px',
+                                            width: "30vw",
                                             backgroundColor: '#4D5A73',
                                             color: 'white',
                                             border: 'none',
@@ -151,6 +153,7 @@ export default function Home() {
 
                         </Box>
                         <Box sx={{
+                            marginX: "auto",
                             display: 'flex',
                             flexDirection: {xs: 'column', md: 'row'},
                             alignItems: {xs: 'center', sm: 'center'},
@@ -165,6 +168,7 @@ export default function Home() {
                                        variant="standard"/>
                         </Box>
                         <Box sx={{
+                            marginX: "auto",
                             display: 'flex',
                             flexDirection: {xs: 'column', md: 'row'},
                             alignItems: {xs: 'center', sm: 'center'},

@@ -23,10 +23,6 @@ const logoStyle = {
 function Sidebar() {
 
 
-    const handleToggleSidebar = () => {
-        toggleSidebar();
-    };
-
     return (
         <div>
             <Box anchor="left">
@@ -111,19 +107,6 @@ function Sidebar() {
                                 alignItems: 'center',
                             }}
                         >
-                        </Box>
-                        <Box
-                            sx={{display: {sm: '', md: 'none'}}}
-                        >
-                            <Button
-                                sx={{minWidth: '30px', p: '4px'}}
-                                color="primary"
-                                variant="text"
-                                aria-label="menu"
-                                onClick={handleToggleSidebar}
-                            >
-                                <MenuIcon/>
-                            </Button>
                         </Box>
                     </Toolbar>
                 </Container>
