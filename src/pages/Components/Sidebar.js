@@ -14,15 +14,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import {ListItemIcon, useMediaQuery} from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 
-const logoStyle = {
-    width: '140px',
-    height: 'auto',
-    cursor: 'pointer',
-};
 
 function Sidebar() {
-
-
     return (
         <div>
             <Box anchor="left">
@@ -41,8 +34,10 @@ function Sidebar() {
                         width: '250px',
                         top: 0,
                         p: 2,
+                        mt: 10,
                         flexShrink: 0,
                         gap: 2,
+                        background: '#242F3D',
                         borderRight: '1px solid',
                         borderColor: 'divider',
                     }}
@@ -67,15 +62,16 @@ function Sidebar() {
                         }}
                         onClick={() => closeSidebar()}
                     />
-                    <Box sx={{p: 2}}>
-                        <img
-                            src="static/avatarexlogo2.png"
-                            style={logoStyle}
-                            alt="logo of sitemark"
-                        />
-                    </Box>
                     <Divider/>
-                    <MenuItem sx={{background:"#17212B", borderRadius: "15px"}}>
+                    <MenuItem sx={{
+                        borderRadius: "15px",
+                        background: "rgb(67, 80, 105);",
+                        transition: '0.5s',
+                        '&:hover': {
+                            boxShadow: '0px 0px 20px #7177F8',
+                            background: "#7177F8",
+                        }
+                    }}>
                         <ListItemIcon>
                             <img src="static/wildber.svg" alt="Wildberries" style={{width: '32px', height: '32px'}}/>
                         </ListItemIcon>

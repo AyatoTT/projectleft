@@ -59,7 +59,7 @@ export default function Home() {
                             mb: 1,
                             gap: 1,
                             p: 10,
-                            background: "#17212B",
+                            background: "#24303F",
                             borderRadius: "25px",
                             flexDirection: {xs: 'column', sm: 'column'},
                             flexWrap: 'wrap',

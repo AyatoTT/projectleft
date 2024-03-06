@@ -8,13 +8,16 @@ import {createTheme, ThemeProvider} from "@mui/material/styles";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const theme = createTheme({
-
+    typography: {
+        fontFamily: 'Roboto Flex, sans-serif',
+    },
     palette: {
         mode: 'dark',
         neutral: {
             800: "#17212B"
         },
         background: {
+            default: "#17212B",
             body: "#17212B",
             surface: "#232F3D",
             popup: "#17212B",
@@ -40,7 +43,7 @@ root.render(
     <ThemeProvider theme={theme}>
         <CssBaseline/>
         <React.StrictMode>
-            <App/>
+            <App />
         </React.StrictMode>
     </ThemeProvider>
 );
